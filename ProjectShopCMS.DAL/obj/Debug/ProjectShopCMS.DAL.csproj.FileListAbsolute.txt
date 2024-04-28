@@ -1,0 +1,10 @@
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\ProjectShopCMS.DAL.dll.config
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\ProjectShopCMS.DAL.dll
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\ProjectShopCMS.DAL.pdb
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.dll
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.xml
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.csprojResolveAssemblyReference.cache
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.dll
+D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.pdb

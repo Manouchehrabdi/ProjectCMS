@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ProjectShopCMS.DAL.Slider>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartSliderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndSliderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiscountTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartSliderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndSliderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SliderId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SliderId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SliderId })
+        </td>
+    </tr>
+}
+
+</table>
