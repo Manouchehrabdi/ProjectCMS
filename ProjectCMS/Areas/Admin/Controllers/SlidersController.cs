@@ -17,7 +17,8 @@ namespace ProjectCMS.Areas.Admin.Controllers
         // GET: Admin/Sliders
         public ActionResult Index()
         {
-            return View(db.Slider.ToList());
+            var info = db.Slider.ToList();
+            return View(info);
         }
 
         // GET: Admin/Sliders/Details/5
