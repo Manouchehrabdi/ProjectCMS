@@ -8,3 +8,13 @@ D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.SqlServer
 D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.csprojResolveAssemblyReference.cache
 D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.dll
 D:\My File\Git\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.pdb
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\ProjectShopCMS.DAL.dll.config
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\ProjectShopCMS.DAL.dll
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\ProjectShopCMS.DAL.pdb
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.dll
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.xml
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.csprojResolveAssemblyReference.cache
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.dll
+E:\App Programing\GitProject\ProjectCMS\ProjectCMS\ProjectShopCMS.DAL\obj\Debug\ProjectShopCMS.DAL.pdb
