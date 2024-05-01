@@ -117,6 +117,7 @@
     <Content Include="Areas\Admin\assets\calendar-jallali\js\jquery.js" />
     <Content Include="Areas\Admin\assets\calendar-jallali\js\moment-jalaali.js" />
     <Content Include="Areas\Admin\assets\calendar-jallali\js\moment.min.js" />
+    <Content Include="Areas\Admin\assets\css\bootstrap-rtl.css" />
     <Content Include="Areas\Admin\assets\css\bootstrap_extend.css" />
     <Content Include="Areas\Admin\assets\css\color_theme.css" />
     <Content Include="Areas\Admin\assets\css\skin_color.css" />
@@ -1643,12 +1644,24 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\kendo.all.min.js" />
+    <Content Include="Scripts\modal.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
