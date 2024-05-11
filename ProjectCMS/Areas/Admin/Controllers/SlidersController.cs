@@ -17,8 +17,7 @@ namespace ProjectCMS.Areas.Admin.Controllers
         // GET: Admin/Sliders
         public ActionResult Index()
         {
-            var info = db.Slider.ToList();
-            return View(info);
+            return View(db.Slider.ToList());
         }
 
         // GET: Admin/Sliders/Details/5
@@ -121,6 +120,7 @@ namespace ProjectCMS.Areas.Admin.Controllers
             if (disposing)
             {
                 db.Dispose();
+               
             }
             base.Dispose(disposing);
         }

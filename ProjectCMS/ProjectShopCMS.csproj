@@ -1638,7 +1638,8 @@
     <Content Include="Areas\Admin\assets\vendor_components\apexcharts-bundle\dist\locales\tr.json" />
     <Content Include="Areas\Admin\assets\vendor_components\apexcharts-bundle\dist\locales\ua.json" />
     <Content Include="Areas\Admin\assets\vendor_components\apexcharts-bundle\package.json" />
-    <Content Include="Areas\Admin\Views\Shared\_MyAdminPannelLayout.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\MyAdminPannelLayout.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

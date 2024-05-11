@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="~/Areas/Admin/assets/images/favicon.ico">
+    <link href="~/Areas/Admin/assets/css/bootstrap-rtl.css" rel="stylesheet" />
+	<title>پنل مدیریتی سانی ادمین</title>
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="~/Areas/Admin/assets/css/vendors_css.css">
+
+	<!-- Style-->
+	<link rel="stylesheet" href="~/Areas/Admin/assets/css/style.css">
+	<link rel="stylesheet" href="~/Areas/Admin/assets/css/skin_color.css">
+</head>
+
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed rtl">    
+
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top pl-30" style="display:flex;">
+                <!-- Sidebar toggle button-->
+                <div>
+                    <ul class="nav" style="display: flex;">
+                        <li class="btn-group nav-item">
+                            <a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon"
+                               data-toggle="push-menu" role="button">
+                                <i class="nav-link-icon mdi mdi-menu"></i>
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="#" data-provide="fullscreen"
+                               class="waves-effect waves-light nav-link rounded svg-bt-icon" title="تمام صفحه">
+                                <i class="nav-link-icon mdi mdi-crop-free"></i>
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item d-none d-xl-inline-block">
+                            <a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
+                                <i class="ti-check-box"></i>
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item d-none d-xl-inline-block">
+                            <a href="calendar.html" class="waves-effect waves-light nav-link rounded svg-bt-icon"
+                               title="">
+                                <i class="ti-calendar"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-custom-menu r-side">
+                    <ul class="nav navbar-nav">
+                        <!-- full Screen -->
+                        <li class="search-bar">
+                            <div class="lookup lookup-circle lookup-right">
+                                <input type="text" name="s">
+                            </div>
+                        </li>
+                        <!-- Notifications -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown"
+                               title="اعلان ها">
+                                <i class="ti-bell"></i>
+                            </a>
+                            <ul class="dropdown-menu animated bounceIn">
+
+                                <li class="header">
+                                    <div class="p-20">
+                                        <div class="flexbox">
+                                            <div>
+                                                <h4 class="mb-0 mt-0">اعلان ها</h4>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-danger">پاک کردن همه</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu sm-scrol">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-info"></i> لورم ایپسوم متن ساختگی با تولید
+                                                سادگی
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-warning text-warning"></i> متن ساختگی صنعت چاپ با تولید
+                                                سادگی
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-danger"></i> تولید سادگی نامفهوم با متن
+                                                ساختگی لورم ایپسوم در صنعت چاپ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-shopping-cart text-success"></i> لورم ایپسوم با تولید
+                                                سادگی نامفهوم
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-user text-danger"></i> متن ساختگی با تولید سادگی نامفهوم
+                                                در صنعت چاپ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-user text-primary"></i> لورم ایپسوم متن ساختگی
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-user text-success"></i> با تولید سادگی نامفهوم در صنعت
+                                                چاپ متن ساختگی
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">مشاهده همه</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- User Account-->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0"
+                               data-toggle="dropdown" title="کاربر">
+                                <img src="~/Areas/Admin/assets/images/avatar/1.jpg" alt="">
+                            </a>
+                            <ul class="dropdown-menu animated flipInX">
+                                <li class="user-body">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="ti-user text-muted mr-2"></i>
+                                        پروفایل
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="ti-wallet text-muted mr-2"></i> کیف پول
+                                        من
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="ti-settings text-muted mr-2"></i>
+                                        تنظیمات
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ti-lock text-muted mr-2"></i> خروج</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="control-sidebar" title="تنظیمات" class="waves-effect waves-light">
+                                <i class="ti-settings"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar-->
+            <section class="sidebar">
+
+                <div class="user-profile">
+                    <div class="ulogo">
+                        <a href="index.html">
+                            <!-- logo for regular state and mobile devices -->
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="~/Areas/Admin/assets/images/logo-dark.png" alt="">
+                                <h3><b>سازمان آتش نشانی و خدمات ایمنی شهرداری تبریز</b> </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- sidebar menu-->
+                <ul class="sidebar-menu" data-widget="tree">
+
+                    <li>
+                        <a href="index.html">
+                            <i data-feather="pie-chart"></i>
+                            <span>داشبورد</span>
+                        </a>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="message-circle"></i>
+                            <span>برنامه</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="chat.html"><i class="ti-more"></i>چت</a></li>
+                            <li><a href="calendar.html"><i class="ti-more"></i>تقویم رویداد میلادی</a></li>
+                            <li><a href="calendar-jalali.html"><i class="ti-more"></i>تقویم رویداد شمسی</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="mail"></i> <span>ایمیل</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="mailbox_inbox.html"><i class="ti-more"></i>صندوق دریافت</a></li>
+                            <li><a href="mailbox_compose.html"><i class="ti-more"></i>ارسال ایمیل</a></li>
+                            <li><a href="mailbox_read_mail.html"><i class="ti-more"></i>خواندن ایمیل</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="file"></i>
+                            <span>صفحات</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="profile.html"><i class="ti-more"></i>پروفایل</a></li>
+                            <li><a href="invoice.html"><i class="ti-more"></i>فاکتور</a></li>
+                            <li><a href="gallery.html"><i class="ti-more"></i>گالری</a></li>
+                            <li><a href="faq.html"><i class="ti-more"></i>سوالات متداول</a></li>
+                            <li><a href="timeline.html"><i class="ti-more"></i>تایم لاین</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="header nav-small-cap">رابط کاربری</li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="grid"></i>
+                            <span>کامپوننت ها</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="components_alerts.html"><i class="ti-more"></i>هشدار</a></li>
+                            <li><a href="components_badges.html"><i class="ti-more"></i>نشان</a></li>
+                            <li><a href="components_buttons.html"><i class="ti-more"></i>دکمه</a></li>
+                            <li><a href="components_sliders.html"><i class="ti-more"></i>اسلایدر</a></li>
+                            <li><a href="components_dropdown.html"><i class="ti-more"></i>فهرست کشویی</a></li>
+                            <li><a href="components_modals.html"><i class="ti-more"></i>مُدال</a></li>
+                            <li><a href="components_nestable.html"><i class="ti-more"></i>تو در تو</a></li>
+                            <li><a href="components_progress_bars.html"><i class="ti-more"></i>نوار پیشرفت</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="credit-card"></i>
+                            <span>کارت ها</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="card_advanced.html"><i class="ti-more"></i>کارت پیشرفته</a></li>
+                            <li><a href="card_basic.html"><i class="ti-more"></i>کارت پایه</a></li>
+                            <li><a href="card_color.html"><i class="ti-more"></i>کارت رنگی</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="hard-drive"></i>
+                            <span>محتوا</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="content_typography.html"><i class="ti-more"></i>تایپوگرافی</a></li>
+                            <li><a href="content_media.html"><i class="ti-more"></i>رسانه</a></li>
+                            <li><a href="content_grid.html"><i class="ti-more"></i>شبکه بندی</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="package"></i>
+                            <span>موارد مفید</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="utilities_border.html"><i class="ti-more"></i>خط مرز</a></li>
+                            <li><a href="utilities_color.html"><i class="ti-more"></i>رنگ</a></li>
+                            <li><a href="utilities_ribbons.html"><i class="ti-more"></i>روبان</a></li>
+                            <li><a href="utilities_tab.html"><i class="ti-more"></i>تب ها</a></li>
+                            <li><a href="utilities_animations.html"><i class="ti-more"></i>انیمیشن</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="edit-2"></i>
+                            <span>آیکون ها</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="icons_fontawesome.html"><i class="ti-more"></i>فونت آوسوم</a></li>
+                            <li><a href="icons_glyphicons.html"><i class="ti-more"></i>آیکون Glyphicons</a></li>
+                            <li><a href="icons_material.html"><i class="ti-more"></i>آیکون های متریال</a></li>
+                            <li><a href="icons_themify.html"><i class="ti-more"></i>آیکون های Themify</a></li>
+                            <li><a href="icons_simpleline.html"><i class="ti-more"></i>آیکون های SimpleLine</a></li>
+                            <li><a href="icons_cryptocoins.html"><i class="ti-more"></i>آیکون های ارز دیجیتال</a></li>
+                            <li><a href="icons_flag.html"><i class="ti-more"></i>آیکون های پرچم</a></li>
+                            <li><a href="icons_weather.html"><i class="ti-more"></i>آیکون های آب و هوا</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="inbox"></i>
+                            <span>فرم ها</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="forms_advanced.html"><i class="ti-more"></i>عناصر پیشرفته</a></li>
+                            <li><a href="forms_editors.html"><i class="ti-more"></i>ویرایشگر متن</a></li>
+                            <li><a href="forms_code_editor.html"><i class="ti-more"></i>ویرایشگر کد</a></li>
+                            <li><a href="forms_validation.html"><i class="ti-more"></i>اعتبارسنجی فرم</a></li>
+                            <li><a href="forms_wizard.html"><i class="ti-more"></i>فرم پیشرفته</a></li>
+                            <li><a href="forms_general.html"><i class="ti-more"></i>عناصر عمومی</a></li>
+                            <li><a href="forms_dropzone.html"><i class="ti-more"></i>آپلود فایل Dropzone</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="server"></i>
+                            <span>جداول</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="tables_simple.html"><i class="ti-more"></i>جداول ساده</a></li>
+                            <li><a href="tables_data.html"><i class="ti-more"></i>جداول داده ای</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="pie-chart"></i>
+                            <span>نمودار ها</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="charts_chartjs.html"><i class="ti-more"></i>نمودار ChartJS</a></li>
+                            <li><a href="charts_flot.html"><i class="ti-more"></i>نمودار Flot</a></li>
+                            <li><a href="charts_inline.html"><i class="ti-more"></i>نمودار Inline</a></li>
+                            <li><a href="charts_morris.html"><i class="ti-more"></i>نمودار Morris</a></li>
+                            <li><a href="charts_peity.html"><i class="ti-more"></i>نمودار Peity</a></li>
+                            <li><a href="charts_chartist.html"><i class="ti-more"></i>نمودار Chartist</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="map"></i>
+                            <span>نقشه</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="map_google.html"><i class="ti-more"></i>نقشه گوگل</a></li>
+                            <li><a href="map_vector.html"><i class="ti-more"></i>نقشه برداری</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="alert-triangle"></i>
+                            <span>احراز هویت</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="auth_login.html"><i class="ti-more"></i>ورود</a></li>
+                            <li><a href="auth_register.html"><i class="ti-more"></i>ثبت نام</a></li>
+                            <li><a href="auth_lockscreen.html"><i class="ti-more"></i>قفل صفحه</a></li>
+                            <li><a href="auth_user_pass.html"><i class="ti-more"></i>رمز عبور</a></li>
+                            <li><a href="error_404.html"><i class="ti-more"></i>خطای 404</a></li>
+                            <li><a href="error_maintenance.html"><i class="ti-more"></i>در دست تعمیر</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="header nav-small-cap">اضافی</li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i data-feather="layers"></i>
+                            <span>چند سطحی</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">سطح یک</a></li>
+                            <li class="treeview">
+                                <a href="#">
+                                    سطح یک
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="#">سطح دو</a></li>
+                                    <li class="treeview">
+                                        <a href="#">
+                                            سطح دو
+                                            <span class="pull-right-container">
+                                                <i class="fa fa-angle-right pull-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a href="#">سطح سه</a></li>
+                                            <li><a href="#">سطح سه</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">سطح یک</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="auth_login.html">
+                            <i data-feather="lock"></i>
+                            <span>خروج</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="تنظیمات"
+                   aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="mailbox_inbox.html" class="link" data-toggle="tooltip" title="" data-original-title="ایمیل">
+                    <i class="ti-email"></i>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="خروج">
+                    <i class="ti-lock"></i>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        
+            
+                <div class="container-full"  margin-top="80px">
+
+                    <!-- Main content -->
+                    <section class="content">
+                        @RenderBody()
+                    </section>
+       
+        <!-- /.content -->
+        </div>
+    </div>
+		<!-- /.content-wrapper -->
+		<footer class="main-footer">
+
+			&copy; 2024 تمامی حقوق محفوظ است
+		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar">
+
+			<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i
+						class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>
+			<!-- Create the tabs -->
+			<ul class="nav nav-tabs control-sidebar-tabs">
+				<li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab" class="active">چت</a></li>
+				<li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab">لیست انجام</a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Home tab content -->
+				<div class="tab-pane active" id="control-sidebar-home-tab">
+					<div class="flexbox">
+						<a href="javascript:void(0)" class="text-grey"><i class="ti-minus"></i></a>
+						<p>کاربران</p>
+						<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+					</div>
+					<div class="lookup lookup-sm lookup-right d-none d-lg-block">
+						<input type="text" name="s" placeholder="جستجو" class="w-p100">
+					</div>
+					<div class="media-list media-list-hover mt-20">
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-success" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/1.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>نسترن</strong></a>
+								</p>
+								<p>لورم ایپسوم متن ...</p>
+								<span>همین حالا</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-danger" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/2.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>پریسا</strong></a>
+								</p>
+								<p>تولید سادگی نامفهوم ...</p>
+								<span>33 دقیقه پیش</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-warning" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/3.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>پدرام</strong></a>
+								</p>
+								<p>متن ساختگی با تولید ...</p>
+								<span>42 دقیقه پیش</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-primary" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/4.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>پدرام</strong></a>
+								</p>
+								<p>متن ساختگی با تولید ...</p>
+								<span>42 دقیقه پیش</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-success" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/1.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>نسترن</strong></a>
+								</p>
+								<p>لورم ایپسوم متن ...</p>
+								<span>همین حالا</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-danger" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/2.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>پریسا</strong></a>
+								</p>
+								<p>تولید سادگی نامفهوم ...</p>
+								<span>33 دقیقه پیش</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-warning" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/3.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>پدرام</strong></a>
+								</p>
+								<p>متن ساختگی با تولید ...</p>
+								<span>42 دقیقه پیش</span>
+							</div>
+						</div>
+
+						<div class="media py-10 px-0">
+							<a class="avatar avatar-lg status-primary" href="#">
+								<img src="~/Areas/Admin/assets/images/avatar/4.jpg" alt="...">
+							</a>
+							<div class="media-body">
+								<p class="font-size-16">
+									<a class="hover-primary" href="#"><strong>پدرام</strong></a>
+								</p>
+								<p>متن ساختگی با تولید ...</p>
+								<span>42 دقیقه پیش</span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- /.tab-pane -->
+				<!-- Settings tab content -->
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<div class="flexbox">
+						<a href="javascript:void(0)" class="text-grey"><i class="ti-minus"></i></a>
+						<p>لیست انجام</p>
+						<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+					</div>
+					<ul class="todo-list mt-20">
+						<li class="py-15 px-5 by-1">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_1" class="filled-in">
+							<label for="basic_checkbox_1" class="mb-0 h-15"></label>
+							<!-- todo text -->
+							<span class="text-line">لورم ایپسوم</span>
+							<!-- Emphasis label -->
+							<small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 دقیقه</small>
+							<!-- General tools such as edit or delete-->
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_2" class="filled-in">
+							<label for="basic_checkbox_2" class="mb-0 h-15"></label>
+							<span class="text-line">با تولید سادگی</span>
+							<small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 ساعت</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5 by-1">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_3" class="filled-in">
+							<label for="basic_checkbox_3" class="mb-0 h-15"></label>
+							<span class="text-line">متن ساختگی</span>
+							<small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 روز</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_4" class="filled-in">
+							<label for="basic_checkbox_4" class="mb-0 h-15"></label>
+							<span class="text-line">متن صنعت چاپ</span>
+							<small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 روز</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5 by-1">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_5" class="filled-in">
+							<label for="basic_checkbox_5" class="mb-0 h-15"></label>
+							<span class="text-line">لورم ایپسوم ساختگی</span>
+							<small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 هفته</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_6" class="filled-in">
+							<label for="basic_checkbox_6" class="mb-0 h-15"></label>
+							<span class="text-line">تولید نامفهوم متن</span>
+							<small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 ماه</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5 by-1">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_7" class="filled-in">
+							<label for="basic_checkbox_7" class="mb-0 h-15"></label>
+							<!-- todo text -->
+							<span class="text-line">لورم ایپسوم</span>
+							<!-- Emphasis label -->
+							<small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 دقیقه</small>
+							<!-- General tools such as edit or delete-->
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_8" class="filled-in">
+							<label for="basic_checkbox_8" class="mb-0 h-15"></label>
+							<span class="text-line">با تولید سادگی</span>
+							<small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 ساعت</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5 by-1">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_9" class="filled-in">
+							<label for="basic_checkbox_9" class="mb-0 h-15"></label>
+							<span class="text-line">متن ساختگی</span>
+							<small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 روز</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+						<li class="py-15 px-5">
+							<!-- checkbox -->
+							<input type="checkbox" id="basic_checkbox_10" class="filled-in">
+							<label for="basic_checkbox_10" class="mb-0 h-15"></label>
+							<span class="text-line">متن صنعت چاپ</span>
+							<small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 روز</small>
+							<div class="tools">
+								<i class="fa fa-edit"></i>
+								<i class="fa fa-trash-o"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /.tab-pane -->
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+
+		<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+		<div class="control-sidebar-bg"></div>
+
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- Vendor JS -->
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Areas/Admin/assets/js/vendors.min.js"></script>
+	<script src="~/Areas/Admin/assets//icons/feather-icons/feather.min.js"></script>
+	<script src="~/Areas/Admin/assets//vendor_components/easypiechart/dist/jquery.easypiechart.js"></script>
+	<script src="~/Areas/Admin/assets//vendor_components/apexcharts-bundle-rtl/irregular-data-series.js"></script>
+	<script src="~/Areas/Admin/assets//vendor_components/apexcharts-bundle-rtl/dist/apexcharts.js"></script>
+
+	<!-- Sunny Admin App -->
+	<script src="~/Areas/Admin/assets/js/template.js"></script>
+	<script src="~/Areas/Admin/assets/js/pages/dashboard.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    @RenderSection("scripts",false)
+</body>
+
+</html>
