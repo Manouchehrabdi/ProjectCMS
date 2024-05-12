@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MetaData\keyAttribute.cs" />
     <Compile Include="MetaData\keyAttribute1.cs" />
     <Compile Include="MetaData\SliderMetaData.cs" />
     <Compile Include="Model1.Context.cs">
