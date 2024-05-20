@@ -11,14 +11,15 @@ namespace ProjectShopCMS.DAL
     {
         [key]
         public int SliderId { get; set; }
+
         [Display(Name="عنوان تخفیف ها")]
-       
         public string DiscountTitle { get; set; }
+
         [Display(Name = "عنوان اسلایدر")]
         [Required(ErrorMessage = "لطفاً {0} را وارد نمایید")]
 
         public string Title { get; set; }
-        [Display(Name = "نام تصویر")]
+        [Display(Name = "تصویر")]
         
 
         public string ImageName { get; set; }

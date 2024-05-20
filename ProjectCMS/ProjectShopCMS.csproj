@@ -120,6 +120,11 @@
     <Content Include="Areas\Admin\assets\css\bootstrap-rtl.css" />
     <Content Include="Areas\Admin\assets\css\bootstrap_extend.css" />
     <Content Include="Areas\Admin\assets\css\color_theme.css" />
+    <Content Include="Areas\Admin\assets\css\js-persian-cal.css" />
+    <Content Include="Areas\Admin\assets\css\jspc-gray.css" />
+    <Content Include="Areas\Admin\assets\css\jspc-peach.css" />
+    <Content Include="Areas\Admin\assets\css\jspc-royal_blue.css" />
+    <Content Include="Areas\Admin\assets\css\main.css" />
     <Content Include="Areas\Admin\assets\css\skin_color.css" />
     <Content Include="Areas\Admin\assets\css\style.css" />
     <Content Include="Areas\Admin\assets\css\style_rtl.css" />
@@ -1006,6 +1011,7 @@
     <Content Include="Areas\Admin\assets\images\alert\alert6.png" />
     <Content Include="Areas\Admin\assets\images\alert\alert7.png" />
     <Content Include="Areas\Admin\assets\images\american-express.png" />
+    <Content Include="Areas\Admin\assets\images\amib.png" />
     <Content Include="Areas\Admin\assets\images\art-bg.svg" />
     <Content Include="Areas\Admin\assets\images\art-bg2.svg" />
     <Content Include="Areas\Admin\assets\images\art1.svg" />
@@ -1232,6 +1238,7 @@
     <Content Include="Areas\Admin\assets\images\neo.png" />
     <Content Include="Areas\Admin\assets\images\opera.png" />
     <Content Include="Areas\Admin\assets\images\paypal2.png" />
+    <Content Include="Areas\Admin\assets\images\pcal.png" />
     <Content Include="Areas\Admin\assets\images\photo1.jpg" />
     <Content Include="Areas\Admin\assets\images\photo1.png" />
     <Content Include="Areas\Admin\assets\images\photo2.jpg" />
@@ -1298,6 +1305,7 @@
     <Content Include="Areas\Admin\assets\images\video-demo.mp4" />
     <Content Include="Areas\Admin\assets\images\visa.png" />
     <Content Include="Areas\Admin\assets\js\demo.js" />
+    <Content Include="Areas\Admin\assets\js\js-persian-cal.min.js" />
     <Content Include="Areas\Admin\assets\js\pages\advanced-form-element.js" />
     <Content Include="Areas\Admin\assets\js\pages\app-chat.js" />
     <Content Include="Areas\Admin\assets\js\pages\app-contact.js" />
@@ -1699,6 +1707,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Images\Slider\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

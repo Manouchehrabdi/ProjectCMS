@@ -1,18 +1,24 @@
 ﻿@model ProjectShopCMS.DAL.Slider
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "ویرایش";
 }
+<link href="~/Areas/Admin/assets/css/main.css" rel="stylesheet" />
+<link href="~/Areas/Admin/assets/css/js-persian-cal.css" rel="stylesheet" />
+<script src="~/Areas/Admin/assets/js/js-persian-cal.min.js"></script>
 
-<h2>Edit</h2>
+<h2>ویرایش اسلایدر</h2>
 
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Edit", "Sliders", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Slider</h4>
+        @Html.HiddenFor(x=>x.SliderId)
+        @Html.HiddenFor(x => x.ImageName)
+
+
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.SliderId)
@@ -36,7 +42,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ImageName, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="file" name="imageUpload" />
                 @Html.ValidationMessageFor(model => model.ImageName, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -44,7 +50,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.StartSliderDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.StartSliderDate, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="text" id="pcal1" class="pdate valid" name="StartSliderDate" value="@Model.StartSliderDate.ToString("yyy/MM/dd")" />
+                <a class="pcalBtn" href="#"></a>
                 @Html.ValidationMessageFor(model => model.StartSliderDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -52,7 +59,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.EndSliderDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.EndSliderDate, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="text" id="pcal2" class="pdate valid" name="EndSliderDate" value="@Model.EndSliderDate.ToString("yyy/MM/dd")">
+                <a class="pcalBtn" href="#"></a>
                 @Html.ValidationMessageFor(model => model.EndSliderDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -69,14 +77,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="ویرایش" class="btn btn-warning" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("بازگشت به لیست", "Index")
 </div>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>

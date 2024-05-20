@@ -1,27 +1,22 @@
 ﻿@model ProjectShopCMS.DAL.Slider
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "افزودن";
 }
+<link href="~/Areas/Admin/assets/css/main.css" rel="stylesheet" />
+<link href="~/Areas/Admin/assets/css/js-persian-cal.css" rel="stylesheet" />
+<script src="~/Areas/Admin/assets/js/js-persian-cal.min.js"></script>
+<h2>افزودن اسلایدر</h2>
 
-<h2>Create</h2>
 
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("Create", "Sliders", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
-        <h4>Slider</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.SliderId, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.SliderId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SliderId, "", new { @class = "text-danger" })
-            </div>
-        </div>
+
 
         <div class="form-group">
             @Html.LabelFor(model => model.DiscountTitle, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -42,7 +37,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ImageName, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="file" id="imageUpload" name="imageUpload" />
                 @Html.ValidationMessageFor(model => model.ImageName, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -50,7 +45,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.StartSliderDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.StartSliderDate, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="text" id="pcal1" class="pdate valid" name="StartSliderDate" />
                 @Html.ValidationMessageFor(model => model.StartSliderDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -58,7 +53,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.EndSliderDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.EndSliderDate, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="text" id="pcal2" class="pdate valid" name="EndSliderDate">
                 @Html.ValidationMessageFor(model => model.EndSliderDate, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -67,7 +62,8 @@
             @Html.LabelFor(model => model.IsActive, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <div class="checkbox">
-                    @Html.EditorFor(model => model.IsActive)
+                       <input type="checkbox" name="IsActive" value="true" id="IsActive" /><label for="IsActive"></label>
+                        |<input type="checkbox" name="IsActive" value="false" id="IsActive" />
                     @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -75,7 +71,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="افزودن" class="btn btn-success" />
             </div>
         </div>
     </div>
@@ -85,6 +81,10 @@
     @Html.ActionLink("Back to List", "Index")
 </div>
 
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@section scripts{
+<script type="text/javascript">
+    var objCal1 = new AMIB.persianCalendar('pcal1');
+    var objCal2 = new AMIB.persianCalendar('pcal2');
+    $(".pcalBtn").html("<span class='fa fa-calendar text-success'></span>");
+</script>
+    }
