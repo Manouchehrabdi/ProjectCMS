@@ -33601,3 +33601,11 @@ img.online {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+input[type='text']{
+    text-align:right;
+}
+.create{
+    color:red;
+}

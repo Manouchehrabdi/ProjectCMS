@@ -1712,7 +1712,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectShopCMS.DAL\ProjectShopCMS.DAL.csproj">
-      <Project>{c5f52f06-9852-41dc-ac38-f380ed920d26}</Project>
+      <Project>{25460f31-1d12-4bb8-8868-2eb50a324e23}</Project>
       <Name>ProjectShopCMS.DAL</Name>
     </ProjectReference>
   </ItemGroup>

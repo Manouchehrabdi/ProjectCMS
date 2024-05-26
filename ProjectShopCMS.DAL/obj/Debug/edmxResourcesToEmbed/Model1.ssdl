@@ -4,12 +4,12 @@
     <Key>
       <PropertyRef Name="SliderId" />
     </Key>
-    <Property Name="SliderId" Type="int" Nullable="false" />
+    <Property Name="SliderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DiscountTitle" Type="nvarchar" MaxLength="50" />
     <Property Name="Title" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="ImageName" Type="varchar" MaxLength="70" />
-    <Property Name="StartSliderDate" Type="datetime" Nullable="false" />
-    <Property Name="EndSliderDate" Type="datetime" Nullable="false" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="70" />
+    <Property Name="StartSliderDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="EndSliderDate" Type="datetime2" Precision="7" />
     <Property Name="IsActive" Type="bit" Nullable="false" />
   </EntityType>
   <EntityContainer Name="ProjectShopDBModelStoreContainer">

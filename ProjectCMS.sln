@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectShopCMS", "ProjectCMS\ProjectShopCMS.csproj", "{985A780A-FE02-4441-9366-A4CA7F9441D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectShopCMS.DAL", "ProjectShopCMS.DAL\ProjectShopCMS.DAL.csproj", "{C5F52F06-9852-41DC-AC38-F380ED920D26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectShopCMS.DAL", "ProjectShopCMS.DAL\ProjectShopCMS.DAL.csproj", "{25460F31-1D12-4BB8-8868-2EB50A324E23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{985A780A-FE02-4441-9366-A4CA7F9441D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{985A780A-FE02-4441-9366-A4CA7F9441D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{985A780A-FE02-4441-9366-A4CA7F9441D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5F52F06-9852-41DC-AC38-F380ED920D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5F52F06-9852-41DC-AC38-F380ED920D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5F52F06-9852-41DC-AC38-F380ED920D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5F52F06-9852-41DC-AC38-F380ED920D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25460F31-1D12-4BB8-8868-2EB50A324E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25460F31-1D12-4BB8-8868-2EB50A324E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25460F31-1D12-4BB8-8868-2EB50A324E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25460F31-1D12-4BB8-8868-2EB50A324E23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
