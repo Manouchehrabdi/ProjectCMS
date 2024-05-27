@@ -9,7 +9,7 @@
     <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ImageName" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
     <Property Name="StartSliderDate" Type="DateTime" Nullable="false" Precision="7" />
-    <Property Name="EndSliderDate" Type="DateTime" Precision="7" />
+    <Property Name="EndSliderDate" Type="DateTime" Precision="7" Nullable="false" />
     <Property Name="IsActive" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityContainer Name="ProjectShopDBEntities" annotation:LazyLoadingEnabled="true">

@@ -50,7 +50,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.StartSliderDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input type="text" id="pcal1" class="pdate valid" name="StartSliderDate" value="@Model.StartSliderDate.ToString("yyy/MM/dd")" />
+                <input type="text" id="pcal1" class="pdate valid" name="StartSliderDate" value="@Model.StartSliderDate.ToString("yyyy/MM/dd")" />
                 <a class="pcalBtn" href="#"></a>
                 @Html.ValidationMessageFor(model => model.StartSliderDate, "", new { @class = "text-danger" })
             </div>
@@ -59,7 +59,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.EndSliderDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input type="text" id="pcal2" class="pdate valid" name="EndSliderDate" value="@Model.EndSliderDate.ToString("yyy/MM/dd")">
+                <input type="text" id="pcal2" class="pdate valid" name="EndSliderDate" value="@Model.EndSliderDate.ToString("yyyy/MM/dd")">
                 <a class="pcalBtn" href="#"></a>
                 @Html.ValidationMessageFor(model => model.EndSliderDate, "", new { @class = "text-danger" })
             </div>

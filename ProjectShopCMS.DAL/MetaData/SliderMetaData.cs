@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,18 +22,18 @@ namespace ProjectShopCMS.DAL
         public string Title { get; set; }
 
         [Display(Name = "تصویر")]
-        [Required(ErrorMessage = "لطفاً {0} را وارد نمایید")]
         public string ImageName { get; set; }
 
         [Display(Name = "تاریخ شروع اسلایدر")]
         [Required(ErrorMessage = "لطفاً {0} را وارد نمایید")]
-        [DisplayFormat(DataFormatString ="{0:yyy/MM/dd}",ApplyFormatInEditMode =true)]
+        [Column(TypeName = "datetime2")]
+        [DisplayFormat(DataFormatString ="{0:yyyy/MM/dd}",ApplyFormatInEditMode =true)]
         public System.DateTime StartSliderDate { get; set; }
 
         [Display(Name = "تاریخ پایان اسلایدر")]
-        [Required(ErrorMessage = "لطفاً {0} را وارد نمایید")]
-        [DisplayFormat(DataFormatString = "{0:yyy/MM/dd}", ApplyFormatInEditMode = true)]
-        public Nullable<System.DateTime> EndSliderDate { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
+        [Column(TypeName = "datetime2")]
+        public System.DateTime EndSliderDate { get; set; }
 
         [Display(Name = "فعال/غیرفعال")]
         [Required(ErrorMessage = "لطفاً {0} را وارد نمایید")]

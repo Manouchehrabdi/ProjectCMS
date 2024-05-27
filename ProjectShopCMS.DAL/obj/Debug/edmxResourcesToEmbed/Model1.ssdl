@@ -9,7 +9,7 @@
     <Property Name="Title" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="ImageName" Type="nvarchar" MaxLength="70" />
     <Property Name="StartSliderDate" Type="datetime2" Precision="7" Nullable="false" />
-    <Property Name="EndSliderDate" Type="datetime2" Precision="7" />
+    <Property Name="EndSliderDate" Type="datetime2" Precision="7" Nullable="false" />
     <Property Name="IsActive" Type="bit" Nullable="false" />
   </EntityType>
   <EntityContainer Name="ProjectShopDBModelStoreContainer">

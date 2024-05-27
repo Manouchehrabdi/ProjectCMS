@@ -19,7 +19,7 @@ namespace ProjectShopCMS.DAL
         public string Title { get; set; }
         public string ImageName { get; set; }
         public System.DateTime StartSliderDate { get; set; }
-        public Nullable<System.DateTime> EndSliderDate { get; set; }
+        public System.DateTime EndSliderDate { get; set; }
         public bool IsActive { get; set; }
     }
 }

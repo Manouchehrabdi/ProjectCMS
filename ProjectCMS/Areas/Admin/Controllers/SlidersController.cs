@@ -47,12 +47,15 @@ namespace ProjectCMS.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DiscountTitle,Title,ImageName,StartSliderDate,EndSliderDate,IsActive")] Slider slider, HttpPostedFileBase imageUpload)
+        public ActionResult Create([Bind(Include = "DiscountTitle,Title,StartSliderDate,EndSliderDate,IsActive,ImageName")] Slider slider, HttpPostedFileBase imageUpload)
         {
+           
+            
             if (ModelState.IsValid)
             {
                 if (imageUpload == null)
                 {
+                    slider.ImageName = imageUpload.FileName;
                     ModelState.AddModelError("ImageName", "لطفاً تصویر اسلایدر را انتخاب نمایید");
                     return View(slider);
                 }

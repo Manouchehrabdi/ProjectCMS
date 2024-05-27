@@ -1291,8 +1291,7 @@ th {
 .table {
   width: 100%;
   margin-bottom: 20px;
-  margin-right:250px;
-}
+ }
 .table thead > tr > th,
 .table tbody > tr > th,
 .table tfoot > tr > th,
