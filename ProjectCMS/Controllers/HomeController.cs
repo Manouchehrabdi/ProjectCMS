@@ -18,8 +18,10 @@ namespace ProjectShopCMS.Controllers
         }
         public ActionResult Slider()
         {
-            DateTime dateTime = new DateTime(PersianDateTime.Now.Year, PersianDateTime.Now.Month, PersianDateTime.Now.Day, 0, 0, 0);
-            var getSlider = db.Slider.Where(s => s.IsActive && s.StartSliderDate >= dateTime && s.EndSliderDate>=dateTime);
+            // DateTime dateTime = new DateTime(PersianDateTime.Now.Year, PersianDateTime.Now.Month, PersianDateTime.Now.Day, 0, 0, 0);
+            // DateTime dateTime = DateTime.Parse("2024-06-10");
+            DateTime dateTime = DateTime.Now.Date;
+            var getSlider = db.Slider.Where(s => s.IsActive&&s.StartSliderDate<=dateTime&&s.EndSliderDate>=dateTime).ToList();
             return PartialView(getSlider);
         }
     }
