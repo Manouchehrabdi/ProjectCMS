@@ -59,8 +59,8 @@ namespace ProjectCMS.Areas.Admin.Controllers
                     ModelState.AddModelError("ImageName", "لطفاً تصویر اسلایدر را انتخاب نمایید");
                     return View(slider);
                 }
-                slider.ImageName = Guid.NewGuid().ToString() + Path.GetExtension(imageUpload.FileName);
-                imageUpload.SaveAs(Server.MapPath("/Images/Slider") + slider.ImageName);
+                slider.ImageName = Guid.NewGuid().ToString() + Path.GetExtension(imageUpload.FileName);//گرفتن پسوند عکس//
+                imageUpload.SaveAs(Server.MapPath("/Images/Slider/") + slider.ImageName);
                 db.Slider.Add(slider);
                 db.SaveChanges();
                 return RedirectToAction("Index");
