@@ -26,5 +26,8 @@ namespace ProjectShopCMS.DAL
         }
     
         public virtual DbSet<Slider> Slider { get; set; }
+        public virtual DbSet<Roles> Roles { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }
