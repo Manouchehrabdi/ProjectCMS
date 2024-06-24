@@ -23,6 +23,6 @@ namespace ProjectShopCMS.DAL
         public bool IsActive { get; set; }
         public System.DateTime CreateDate { get; set; }
     
-        public virtual Roles Roles { get; set; }
+        public virtual Roles Roles1 { get; set; }
     }
 }

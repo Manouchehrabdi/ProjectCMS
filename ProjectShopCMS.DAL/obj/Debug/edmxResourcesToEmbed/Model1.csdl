@@ -17,7 +17,7 @@
     <EntitySet Name="Roles" EntityType="ProjectShopDBModel.Roles" />
     <EntitySet Name="sysdiagrams" EntityType="ProjectShopDBModel.sysdiagrams" />
     <EntitySet Name="User" EntityType="ProjectShopDBModel.User" />
-    <AssociationSet Name="FK_User_Roles" Association="ProjectShopDBModel.FK_User_Roles">
+    <AssociationSet Name="FK_User_Roles1" Association="ProjectShopDBModel.FK_User_Roles1">
       <End Role="Roles" EntitySet="Roles" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>
@@ -29,7 +29,7 @@
     <Property Name="RoleId" Type="Int32" Nullable="false" />
     <Property Name="RoleTitle" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="RoleName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="User" Relationship="ProjectShopDBModel.FK_User_Roles" FromRole="Roles" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="ProjectShopDBModel.FK_User_Roles1" FromRole="Roles" ToRole="User" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -53,17 +53,17 @@
     <Property Name="ActivationCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="IsActive" Type="Boolean" Nullable="false" />
     <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Roles" Relationship="ProjectShopDBModel.FK_User_Roles" FromRole="User" ToRole="Roles" />
+    <NavigationProperty Name="Roles1" Relationship="ProjectShopDBModel.FK_User_Roles1" FromRole="User" ToRole="Roles" />
   </EntityType>
-  <Association Name="FK_User_Roles">
+  <Association Name="FK_User_Roles1">
     <End Type="ProjectShopDBModel.Roles" Role="Roles" Multiplicity="1" />
-    <End Type="ProjectShopDBModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="ProjectShopDBModel.User" Role="User" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Roles">
         <PropertyRef Name="RoleId" />
       </Principal>
       <Dependent Role="User">
-        <PropertyRef Name="UserId" />
+        <PropertyRef Name="RoleId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

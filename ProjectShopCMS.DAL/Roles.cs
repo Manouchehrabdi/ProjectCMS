@@ -14,10 +14,17 @@ namespace ProjectShopCMS.DAL
     
     public partial class Roles
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Roles()
+        {
+            this.User1 = new HashSet<User>();
+        }
+    
         public int RoleId { get; set; }
         public string RoleTitle { get; set; }
         public string RoleName { get; set; }
     
-        public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> User1 { get; set; }
     }
 }

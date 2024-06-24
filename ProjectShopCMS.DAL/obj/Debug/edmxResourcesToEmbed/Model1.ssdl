@@ -45,13 +45,13 @@
   </EntityType>
   <Association Name="FK_User_Roles">
     <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
-    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Roles">
         <PropertyRef Name="RoleId" />
       </Principal>
       <Dependent Role="User">
-        <PropertyRef Name="UserId" />
+        <PropertyRef Name="RoleId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

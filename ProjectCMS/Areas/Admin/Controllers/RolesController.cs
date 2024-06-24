@@ -17,8 +17,7 @@ namespace ProjectCMS.Areas.Admin.Controllers
         // GET: Admin/Roles
         public ActionResult Index()
         {
-            var roles = db.Roles.Include(r => r.User);
-            return View(roles.ToList());
+            return View(db.Roles.ToList());
         }
 
         // GET: Admin/Roles/Details/5
@@ -39,7 +38,7 @@ namespace ProjectCMS.Areas.Admin.Controllers
         // GET: Admin/Roles/Create
         public ActionResult Create()
         {
-            ViewBag.RoleId = new SelectList(db.User, "UserId", "UserName");
+
             return View();
         }
 
@@ -57,7 +56,6 @@ namespace ProjectCMS.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.RoleId = new SelectList(db.User, "UserId", "UserName", roles.RoleId);
             return View(roles);
         }
 
@@ -73,7 +71,6 @@ namespace ProjectCMS.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.RoleId = new SelectList(db.User, "UserId", "UserName", roles.RoleId);
             return View(roles);
         }
 
@@ -90,7 +87,6 @@ namespace ProjectCMS.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.RoleId = new SelectList(db.User, "UserId", "UserName", roles.RoleId);
             return View(roles);
         }
 
